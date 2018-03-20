@@ -61,4 +61,6 @@ La géolocalisation  des paquets grace à IOT permettant  tracabilité et transp
 
 la géolocalisation des chargements ainsi que l’automatisation de la procédure implique la génération de nombreuse données,,  en les utilisants dans la mesure de respect de confidentialité qui intervienne dans ce domaine, il est possible  de proposer ces datas aux companie afin de les aider dans leur logistic, élément clé du secteur et/ou d’implémenter une solution de machine learning tentant daméliorer cela pour eux.
 
+commandes groupées pour particuliers.
+
 Commande vocale / assistant d’utilisation : si trop de fonctionnalités sont disponnible   il est utile d’avoir un moyen d’aider l’utilisateur à s’y retrouvé.
