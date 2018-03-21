@@ -1,15 +1,104 @@
+/* Variables */
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  padding-left: 30px;
-  padding-right: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Oxygen', sans-serif;
+}
+
+header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #256F80;
+  color: white;
+}
+header h1 {
+  width: 10%;
+}
+header nav {
+  width: 40%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+header nav ul li {
+  padding: 10px 15px;
+}
+header nav ul #newDealButton {
+  background-color: #F74316;
+  border-radius: 10px;
+}
+
+/* New Deal page style */
+#DealMakerMain {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+#DealMakerMain section {
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 3px 22px 47px -13px #9E968F;
+}
+#DealMakerMain section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#DealMakerMain section form input {
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid #9E968F;
+  font-size: 1rem;
+}
+#DealMakerMain section form .button {
+  width: 30%;
+  margin-left: calc(50% - 15%);
+  border: none;
+}
+#DealMakerMain #buyerFormSection {
+  position: relative;
+  margin-right: 5px;
+}
+#DealMakerMain #buyerFormSection form {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+#DealMakerMain #buyerFormSection form input {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#DealMakerMain #buyerFormSection form .button {
+  margin-left: calc(50% - 15%);
+}
+#DealMakerMain #sellerFormSection {
+  margin-left: 5px;
+}
+
+.button {
+  color: white;
+  background-color: #F74316;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
