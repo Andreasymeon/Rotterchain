@@ -100,6 +100,69 @@ header {
 	}
 }
 
+/* Contracts page style */
+
+#contractsMain {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	#contractsFilters {
+		width: 15%;
+		padding:10px;
+		ul {
+			text-align: right;
+			padding-right: 10px;
+			li {
+				font-size: 1rem;
+				padding-top: 20px;
+			}
+		}
+	}
+	#contractsViewer {
+		width: 75%;
+		border-left: 1px solid $orangeHex;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		.contractView {
+			width: 200px;
+			height: 200px; 
+			border-top: 2px solid $blueHex;
+			padding-top: 10px;
+			margin-right: 50px;
+			margin-bottom: 40px;
+			position: relative;
+			box-shadow: 3px 22px 47px -13px $whiteHex;
+			h3 {
+				color: $blueHex;
+				padding: 10px;
+				font-weight: 100;
+			}
+			.date {
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			.contractDescr {
+				width: 50%;
+				padding-left: calc(50% - 25%);
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.status {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				padding: 5px 7px;
+				color: white;
+				text-align: center;
+				background-color: $orangeHex;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+
 .button {
 	color: white; 
 	background-color: $orangeHex;

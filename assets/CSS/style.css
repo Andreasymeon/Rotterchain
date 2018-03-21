@@ -93,6 +93,67 @@ header nav ul #newDealButton {
   margin-left: 5px;
 }
 
+/* Contracts page style */
+#contractsMain {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+#contractsMain #contractsFilters {
+  width: 15%;
+  padding: 10px;
+}
+#contractsMain #contractsFilters ul {
+  text-align: right;
+  padding-right: 10px;
+}
+#contractsMain #contractsFilters ul li {
+  font-size: 1rem;
+  padding-top: 20px;
+}
+#contractsMain #contractsViewer {
+  width: 75%;
+  border-left: 1px solid #F74316;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contractsMain #contractsViewer .contractView {
+  width: 200px;
+  height: 200px;
+  border-top: 2px solid #256F80;
+  padding-top: 10px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 3px 22px 47px -13px #9E968F;
+}
+#contractsMain #contractsViewer .contractView h3 {
+  color: #256F80;
+  padding: 10px;
+  font-weight: 100;
+}
+#contractsMain #contractsViewer .contractView .date {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#contractsMain #contractsViewer .contractView .contractDescr {
+  width: 50%;
+  padding-left: calc(50% - 25%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#contractsMain #contractsViewer .contractView .status {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 7px;
+  color: white;
+  text-align: center;
+  background-color: #F74316;
+  border-radius: 10px;
+}
+
 .button {
   color: white;
   background-color: #F74316;
