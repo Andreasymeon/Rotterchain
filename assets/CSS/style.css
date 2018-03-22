@@ -2,52 +2,114 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
+  font-family: 'Source Sans Pro', sans-serif; }
 
 ul {
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 a {
   text-decoration: none;
-  color: white;
-}
+  color: white; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Oxygen', sans-serif;
-}
+  font-family: 'Oxygen', sans-serif; }
 
 header {
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   background-color: #256F80;
-  color: white;
-}
-header h1 {
-  width: 10%;
-}
-header nav {
-  width: 40%;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0 0 0;
-}
-header nav ul li {
-  padding: 10px 15px;
-}
-header nav ul #newDealButton {
-  background-color: #F74316;
-  border-radius: 10px;
-}
+  color: white; }
+  header h1 {
+    width: 10%; }
+  header nav {
+    width: 40%; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0 0 0; }
+      header nav ul li {
+        padding: 10px 15px; }
+      header nav ul #newDealButton {
+        background-color: #F74316;
+        border-radius: 10px; }
 
+/*==============================ANDREA==============================*/
+/* News feed page style */
+#newsFeedMain {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; }
+  #newsFeedMain #newsFeedFilters {
+    width: 15%;
+    padding: 10px;
+    border-right: 1px solid #F74316; }
+    #newsFeedMain #newsFeedFilters ul {
+      text-align: right;
+      padding-right: 10px; }
+      #newsFeedMain #newsFeedFilters ul li {
+        font-size: 1rem;
+        padding-top: 20px; }
+  #newsFeedMain #offersFeed, #newsFeedMain #competitorsFeed {
+    width: 75%;
+    padding: 20px;
+    padding-left: 20%; }
+    #newsFeedMain #offersFeed h2, #newsFeedMain #competitorsFeed h2 {
+      font-weight: 400;
+      padding: 15px; }
+    #newsFeedMain #offersFeed .feedRow, #newsFeedMain #competitorsFeed .feedRow {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    #newsFeedMain #offersFeed .offerNotif, #newsFeedMain #offersFeed .competitorNotif, #newsFeedMain #offersFeed .mostRecentNotif, #newsFeedMain #competitorsFeed .offerNotif, #newsFeedMain #competitorsFeed .competitorNotif, #newsFeedMain #competitorsFeed .mostRecentNotif {
+      width: 200px;
+      height: 200px;
+      border-top: 2px solid #256F80;
+      padding-top: 10px;
+      margin-right: 50px;
+      margin-bottom: 40px;
+      position: relative;
+      box-shadow: 3px 22px 47px -13px #9E968F; }
+      #newsFeedMain #offersFeed .offerNotif h3, #newsFeedMain #offersFeed .competitorNotif h3, #newsFeedMain #offersFeed .mostRecentNotif h3, #newsFeedMain #competitorsFeed .offerNotif h3, #newsFeedMain #competitorsFeed .competitorNotif h3, #newsFeedMain #competitorsFeed .mostRecentNotif h3 {
+        color: #256F80;
+        padding: 10px;
+        font-weight: 100; }
+      #newsFeedMain #offersFeed .offerNotif .date, #newsFeedMain #offersFeed .competitorNotif .date, #newsFeedMain #offersFeed .mostRecentNotif .date, #newsFeedMain #competitorsFeed .offerNotif .date, #newsFeedMain #competitorsFeed .competitorNotif .date, #newsFeedMain #competitorsFeed .mostRecentNotif .date {
+        padding-top: 10px;
+        padding-left: 10px; }
+      #newsFeedMain #offersFeed .offerNotif .offerDescr, #newsFeedMain #offersFeed .competitorNotif .offerDescr, #newsFeedMain #offersFeed .mostRecentNotif .offerDescr, #newsFeedMain #competitorsFeed .offerNotif .offerDescr, #newsFeedMain #competitorsFeed .competitorNotif .offerDescr, #newsFeedMain #competitorsFeed .mostRecentNotif .offerDescr {
+        width: 50%;
+        padding-left: calc(50% - 25%);
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      #newsFeedMain #offersFeed .offerNotif .details, #newsFeedMain #offersFeed .competitorNotif .details, #newsFeedMain #offersFeed .mostRecentNotif .details, #newsFeedMain #competitorsFeed .offerNotif .details, #newsFeedMain #competitorsFeed .competitorNotif .details, #newsFeedMain #competitorsFeed .mostRecentNotif .details {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 5px 7px;
+        color: white;
+        text-align: center;
+        background-color: #F74316;
+        border-radius: 10px; }
+    #newsFeedMain #offersFeed .mostRecentNotif, #newsFeedMain #competitorsFeed .mostRecentNotif {
+      width: 700px;
+      height: 300px; }
+      #newsFeedMain #offersFeed .mostRecentNotif .offerDescr, #newsFeedMain #competitorsFeed .mostRecentNotif .offerDescr {
+        padding-left: 50px; }
+
+.button {
+  color: white;
+  background-color: #F74316;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px; }
+
+/*======================================================================*/
 /* New Deal page style */
 #DealMakerMain {
   margin-top: 100px;
   display: flex;
+
   justify-content: center;
 }
 #DealMakerMain section {
@@ -110,125 +172,98 @@ header nav ul #newDealButton {
   margin-left: 5px;
 }
 
-/* Contracts and Deal finder page style */
-#contractsMain, #dealsMain {
+  justify-content: center; }
+  #DealMakerMain section {
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 22px 47px -13px #9E968F; }
+    #DealMakerMain section form {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      #DealMakerMain section form input {
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-bottom: 1px solid #9E968F;
+        font-size: 1rem; }
+      #DealMakerMain section form .button {
+        width: 30%;
+        margin-left: calc(50% - 15%);
+        border: none; }
+  #DealMakerMain #buyerFormSection {
+    position: relative;
+    margin-right: 5px; }
+    #DealMakerMain #buyerFormSection form {
+      position: absolute;
+      bottom: 10px;
+      left: 0; }
+      #DealMakerMain #buyerFormSection form input {
+        margin-right: 10px;
+        margin-left: 10px; }
+      #DealMakerMain #buyerFormSection form .button {
+        margin-left: calc(50% - 15%); }
+  #DealMakerMain #sellerFormSection {
+    margin-left: 5px; }
+
+
+/* Contracts page style */
+#contractsMain {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
-}
-#contractsMain #contractsFilters, #dealsMain #contractsFilters {
-  width: 15%;
-  padding: 10px;
-}
-#contractsMain #contractsFilters ul, #dealsMain #contractsFilters ul {
-  text-align: right;
-  padding-right: 10px;
-}
-#contractsMain #contractsFilters ul li, #dealsMain #contractsFilters ul li {
-  font-size: 1rem;
-  padding-top: 20px;
-}
-#contractsMain #contractsViewer, #dealsMain #contractsViewer {
-  width: 75%;
-  border-left: 1px solid #F74316;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
+  justify-content: center; }
+  #contractsMain #contractsFilters {
+    width: 15%;
+    padding: 10px; }
+    #contractsMain #contractsFilters ul {
+      text-align: right;
+      padding-right: 10px; }
+      #contractsMain #contractsFilters ul li {
+        font-size: 1rem;
+        padding-top: 20px; }
+  #contractsMain #contractsViewer {
+    width: 75%;
+    border-left: 1px solid #F74316;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    #contractsMain #contractsViewer .contractView {
+      width: 200px;
+      height: 200px;
+      border-top: 2px solid #256F80;
+      padding-top: 10px;
+      margin-right: 50px;
+      margin-bottom: 40px;
+      position: relative;
+      box-shadow: 3px 22px 47px -13px #9E968F; }
+      #contractsMain #contractsViewer .contractView h3 {
+        color: #256F80;
+        padding: 10px;
+        font-weight: 100; }
+      #contractsMain #contractsViewer .contractView .date {
+        padding-top: 10px;
+        padding-left: 10px; }
+      #contractsMain #contractsViewer .contractView .contractDescr {
+        width: 50%;
+        padding-left: calc(50% - 25%);
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      #contractsMain #contractsViewer .contractView .status {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        padding: 5px 7px;
+        color: white;
+        text-align: center;
+        background-color: #F74316;
+        border-radius: 10px; }
 
-.contractView, .dealView {
-  width: 200px;
-  height: 200px;
-  border-top: 2px solid #256F80;
-  padding-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 40px;
-  position: relative;
-  box-shadow: 3px 22px 47px -13px #9E968F;
-}
-.contractView h3, .dealView h3 {
-  color: #256F80;
-  padding: 10px;
-  font-weight: 100;
-}
-.contractView .date, .dealView .date {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.contractView .contractDescr, .contractView .dealDescr, .dealView .contractDescr, .dealView .dealDescr {
-  width: 50%;
-  padding-left: calc(50% - 25%);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.contractView .status, .contractView .button, .dealView .status, .dealView .button {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 5px 7px;
-  color: white;
-  text-align: center;
-  background-color: #F74316;
-  border-radius: 10px;
-}
-
-#dealsMain, #contractToSignMain {
-  padding: 10px 50px;
-  justify-content: initial;
-}
-#dealsMain .dealView, #contractToSignMain .dealView {
-  border-top: 2px solid #F74316;
-  height: 270px;
-}
-#dealsMain .dealView h3, #contractToSignMain .dealView h3 {
-  color: #F74316;
-}
-#dealsMain .dealView li, #contractToSignMain .dealView li {
-  padding-top: 5px;
-}
-#dealsMain .dealView .button, #contractToSignMain .dealView .button {
-  background-color: #256F80;
-}
-
-#contractToSignMain {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#contractToSignMain .dealView {
-  border-top: 2px solid #F74316;
-  height: 240px;
-}
-#contractToSignMain .addCond {
-  width: 400px;
-}
-#contractToSignMain .addCond textarea {
-  resize: none;
-  margin-left: 15px;
-}
-#contractToSignMain .fa {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 5rem;
-  width: 120px;
-  height: 120px;
-  padding: 10px;
-  line-height: 110px;
-  color: white;
-  border-radius: 50%;
-  background-color: #256F80;
-  box-shadow: 3px 22px 47px -13px #9E968F;
-}
-
-/* General class style */
 .button {
   color: white;
   background-color: #F74316;
   font-size: 1rem;
   border: none;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
