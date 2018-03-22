@@ -20,7 +20,7 @@
 				<li>Insurance: no</li>
 			</ul>
 			<div class="button">
-				<a href="contractSetter.php">Make a deal</a>
+				<a href="contractToSign.php">Make a deal</a>
 			</div>
 		</div>
 

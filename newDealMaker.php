@@ -13,7 +13,7 @@
 
 		<form action=" " method="POST">
 			<input type="text" name="buyerSearch" placeholder="What are you looking for?">
-			<input class="button" type="submit" name="submit" value="Search">
+			<a href="dealfinder.php" class="button">Search</a>
 		</form>
 
 <!--===================-->

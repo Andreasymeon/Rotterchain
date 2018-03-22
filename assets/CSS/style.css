@@ -101,6 +101,11 @@ header nav ul #newDealButton {
 #DealMakerMain #buyerFormSection form .button {
   margin-left: calc(50% - 15%);
 }
+#DealMakerMain #buyerFormSection form a {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
 #DealMakerMain #sellerFormSection {
   margin-left: 5px;
 }

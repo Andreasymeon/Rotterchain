@@ -8,12 +8,12 @@
 <main id="contractToSignMain">
 	
 	<div class="dealView">
-			<h3>Seller: NOM</h3>
+			<h3>Seller: International Transind</h3>
 			<ul class="dealDescr">
-				<li>Quoi</li>
-				<li>Quantité</li>
-				<li>Prix</li>
-				<li>où</li>
+				<li>Apples</li>
+				<li>800kg</li>
+				<li>700€</li>
+				<li>From London</li>
 				<li>Transport: yes</li>
 				<li>Insurance: no</li>
 			</ul>
@@ -26,10 +26,10 @@
 			</form>
 	</div>
 	<div class="dealView">
-			<h3>Buyer: NOM</h3>
+			<h3>Buyer: Carroy's Market</h3>
 			<ul class="dealDescr">
-				<li>où</li>
-				<li>contact</li>
+				<li>To Bruxelles</li>
+				<li>+32432445566</li>
 			</ul>
 	</div>
 	<i class="fa fa-file-text-o" aria-hidden="true"></i>
