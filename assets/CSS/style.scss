@@ -175,12 +175,12 @@ header {
 	}
 }
 
-#dealsMain {
+#dealsMain, #contractToSignMain {
 	padding: 10px 50px;
 	justify-content: initial;
 	.dealView {
 		border-top: 2px solid $orangeHex;
-		height: 240px;
+		height: 270px;
 		h3 {
 			color: $orangeHex;
 		}
@@ -192,6 +192,39 @@ header {
 
 		}
 	}
+}
+
+#contractToSignMain {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	.dealView {
+		border-top: 2px solid $orangeHex;
+		height: 240px;
+	}
+	.addCond {
+		width: 400px;
+		textarea {
+   			resize: none;
+   			margin-left: 15px;
+		}
+	}
+	.fa {
+		margin-top: 20px;
+		text-align: center;
+	 	font-size: 5rem;
+	 	width: 120px;
+	 	height: 120px;
+	 	padding: 10px;
+	 	line-height: 110px;
+	 	color: white;
+	 	border-radius: 50%;
+	 	background-color: $blueHex;
+	 	box-shadow: 3px 22px 47px -13px $whiteHex;
+	}
+
 }
 
 

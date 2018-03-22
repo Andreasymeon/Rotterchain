@@ -167,22 +167,54 @@ header nav ul #newDealButton {
   border-radius: 10px;
 }
 
-#dealsMain {
+#dealsMain, #contractToSignMain {
   padding: 10px 50px;
   justify-content: initial;
 }
-#dealsMain .dealView {
+#dealsMain .dealView, #contractToSignMain .dealView {
+  border-top: 2px solid #F74316;
+  height: 270px;
+}
+#dealsMain .dealView h3, #contractToSignMain .dealView h3 {
+  color: #F74316;
+}
+#dealsMain .dealView li, #contractToSignMain .dealView li {
+  padding-top: 5px;
+}
+#dealsMain .dealView .button, #contractToSignMain .dealView .button {
+  background-color: #256F80;
+}
+
+#contractToSignMain {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#contractToSignMain .dealView {
   border-top: 2px solid #F74316;
   height: 240px;
 }
-#dealsMain .dealView h3 {
-  color: #F74316;
+#contractToSignMain .addCond {
+  width: 400px;
 }
-#dealsMain .dealView li {
-  padding-top: 5px;
+#contractToSignMain .addCond textarea {
+  resize: none;
+  margin-left: 15px;
 }
-#dealsMain .dealView .button {
+#contractToSignMain .fa {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 5rem;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  line-height: 110px;
+  color: white;
+  border-radius: 50%;
   background-color: #256F80;
+  box-shadow: 3px 22px 47px -13px #9E968F;
 }
 
 /* General class style */

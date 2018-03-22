@@ -15,10 +15,13 @@
 				<li>Quoi</li>
 				<li>Quantité</li>
 				<li>Prix</li>
+				<li>où</li>
 				<li>Transport: yes</li>
 				<li>Insurance: no</li>
 			</ul>
-			<div class="button"><a href="contractSetter.php">Make a deal</a></div>
+			<div class="button">
+				<a href="contractSetter.php">Make a deal</a>
+			</div>
 		</div>
 
 	<!--===================-->
