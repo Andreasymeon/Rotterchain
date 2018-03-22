@@ -1,0 +1,258 @@
+/* Variables */
+
+$blueHex: #256F80;
+
+$orangeHex: #F74316;
+
+$whiteHex: #9E968F;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none; 
+	color: white;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Oxygen', sans-serif;
+}
+
+header {
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	background-color: $blueHex;
+	color: white;
+	h1 {
+		width:10%;
+	}
+	nav {
+		width: 40%;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 0 0 0;
+			li {
+				padding: 10px 15px;
+			}
+			#newDealButton {
+				background-color: $orangeHex;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+/*==============================ANDREA==============================*/
+/* News feed page style */
+
+#newsFeedMain,  {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	#newsFeedFilters {
+		width: 15%;
+		padding:10px;
+		border-right: 1px solid $orangeHex;
+		ul {
+			text-align: right;
+			padding-right: 10px;
+			li {
+				font-size: 1rem;
+				padding-top: 20px;
+			}
+		}
+	}
+	
+	#offersFeed, #competitorsFeed {
+		width: 75%;
+		padding: 20px;
+		padding-left: 20%;
+		h2 {
+			font-weight: 400;
+			padding: 15px;
+		}
+		.feedRow {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.offerNotif, .competitorNotif, .mostRecentNotif {
+			width: 200px;
+			height: 200px; 
+			border-top: 2px solid $blueHex;
+			padding-top: 10px;
+			margin-right: 50px;
+			margin-bottom: 40px;
+			position: relative;
+			box-shadow: 3px 22px 47px -13px $whiteHex;
+			h3 {
+				color: $blueHex;
+				padding: 10px;
+				font-weight: 100;
+			}
+			.date {
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			.offerDescr {
+				width: 50%;
+				padding-left: calc(50% - 25%);
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.details {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				padding: 5px 7px;
+				color: white;
+				text-align: center;
+				background-color: $orangeHex;
+				border-radius: 10px;
+			}
+		}
+		.mostRecentNotif {
+			width: 700px;
+			height: 300px; 
+			.offerDescr {padding-left: 50px;}
+		}
+	}
+}
+
+.button {
+	color: white; 
+	background-color: $orangeHex;
+	font-size: 1rem;
+	border: none;
+	border-radius: 10px;
+}
+/*======================================================================*/
+
+/* New Deal page style */
+
+#DealMakerMain {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	section {
+		width: 400px;
+		padding: 10px;
+		text-align: center;
+		box-shadow: 3px 22px 47px -13px $whiteHex;
+		form {
+			display: flex;
+			flex-direction: column;
+			width:100%;
+			input {
+				padding: 10px;
+				margin-top: 20px;
+				border: none;
+				border-bottom: 1px solid $whiteHex;
+				font-size: 1rem;
+			}
+			.button {
+				width: 30%;
+				margin-left: calc(50% - 15%);
+				border: none;
+			}
+		}
+	}
+	#buyerFormSection {
+		position: relative;
+		margin-right: 5px;
+		form {
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			input {
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			.button {
+				margin-left: calc(50% - 15%);
+			}
+		}
+	}
+	#sellerFormSection {
+		margin-left: 5px;
+	}
+}
+
+/* Contracts page style */
+
+#contractsMain {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	#contractsFilters {
+		width: 15%;
+		padding:10px;
+		ul {
+			text-align: right;
+			padding-right: 10px;
+			li {
+				font-size: 1rem;
+				padding-top: 20px;
+			}
+		}
+	}
+	#contractsViewer {
+		width: 75%;
+		border-left: 1px solid $orangeHex;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		.contractView {
+			width: 200px;
+			height: 200px; 
+			border-top: 2px solid $blueHex;
+			padding-top: 10px;
+			margin-right: 50px;
+			margin-bottom: 40px;
+			position: relative;
+			box-shadow: 3px 22px 47px -13px $whiteHex;
+			h3 {
+				color: $blueHex;
+				padding: 10px;
+				font-weight: 100;
+			}
+			.date {
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			.contractDescr {
+				width: 50%;
+				padding-left: calc(50% - 25%);
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.status {
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+				padding: 5px 7px;
+				color: white;
+				text-align: center;
+				background-color: $orangeHex;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+
+.button {
+	color: white; 
+	background-color: $orangeHex;
+	font-size: 1rem;
+	border: none;
+	border-radius: 10px;
+}
+
