@@ -59,8 +59,10 @@ header {
 	section {
 		width: 400px;
 		padding: 10px;
-		text-align: center;
 		box-shadow: 3px 22px 47px -13px $whiteHex;
+		h2 {
+			text-align: center;
+		}
 		form {
 			display: flex;
 			flex-direction: column;
@@ -71,6 +73,16 @@ header {
 				border: none;
 				border-bottom: 1px solid $whiteHex;
 				font-size: 1rem;
+			}
+			select, label {
+				font-size: 1rem;
+			}
+			.sellingCond{
+				padding-top: 10px;;
+				label {
+				width: 50px;
+				margin-right: 30px;
+				}
 			}
 			.button {
 				width: 30%;
@@ -100,9 +112,9 @@ header {
 	}
 }
 
-/* Contracts page style */
+/* Contracts and Deal finder page style */
 
-#contractsMain {
+#contractsMain, #dealsMain {
 	margin-top: 10px;
 	display: flex;
 	justify-content: center;
@@ -124,7 +136,10 @@ header {
 		padding: 20px;
 		display: flex;
 		flex-wrap: wrap;
-		.contractView {
+	}
+}
+
+.contractView, .dealView {
 			width: 200px;
 			height: 200px; 
 			border-top: 2px solid $blueHex;
@@ -142,13 +157,13 @@ header {
 				padding-top: 10px;
 				padding-left: 10px;
 			}
-			.contractDescr {
+			.contractDescr, .dealDescr {
 				width: 50%;
 				padding-left: calc(50% - 25%);
 				padding-top: 10px;
 				padding-bottom: 10px;
 			}
-			.status {
+			.status,.button {
 				position: absolute;
 				right: 10px;
 				bottom: 10px;
@@ -157,11 +172,64 @@ header {
 				text-align: center;
 				background-color: $orangeHex;
 				border-radius: 10px;
-			}
+	}
+}
+
+#dealsMain, #contractToSignMain {
+	padding: 10px 50px;
+	justify-content: initial;
+	.dealView {
+		border-top: 2px solid $orangeHex;
+		height: 270px;
+		h3 {
+			color: $orangeHex;
+		}
+		li {
+			padding-top: 5px;
+		}
+		.button {
+			background-color: $blueHex;
+
 		}
 	}
 }
 
+#contractToSignMain {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	.dealView {
+		border-top: 2px solid $orangeHex;
+		height: 240px;
+	}
+	.addCond {
+		width: 400px;
+		textarea {
+   			resize: none;
+   			margin-left: 15px;
+		}
+	}
+	.fa {
+		margin-top: 20px;
+		text-align: center;
+	 	font-size: 5rem;
+	 	width: 120px;
+	 	height: 120px;
+	 	padding: 10px;
+	 	line-height: 110px;
+	 	color: white;
+	 	border-radius: 50%;
+	 	background-color: $blueHex;
+	 	box-shadow: 3px 22px 47px -13px $whiteHex;
+	}
+
+}
+
+
+
+/* General class style */
 
 .button {
 	color: white; 
