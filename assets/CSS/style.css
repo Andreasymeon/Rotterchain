@@ -53,8 +53,10 @@ header nav ul #newDealButton {
 #DealMakerMain section {
   width: 400px;
   padding: 10px;
-  text-align: center;
   box-shadow: 3px 22px 47px -13px #9E968F;
+}
+#DealMakerMain section h2 {
+  text-align: center;
 }
 #DealMakerMain section form {
   display: flex;
@@ -67,6 +69,16 @@ header nav ul #newDealButton {
   border: none;
   border-bottom: 1px solid #9E968F;
   font-size: 1rem;
+}
+#DealMakerMain section form select, #DealMakerMain section form label {
+  font-size: 1rem;
+}
+#DealMakerMain section form .sellingCond {
+  padding-top: 10px;
+}
+#DealMakerMain section form .sellingCond label {
+  width: 50px;
+  margin-right: 30px;
 }
 #DealMakerMain section form .button {
   width: 30%;
@@ -93,32 +105,33 @@ header nav ul #newDealButton {
   margin-left: 5px;
 }
 
-/* Contracts page style */
-#contractsMain {
+/* Contracts and Deal finder page style */
+#contractsMain, #dealsMain {
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
-#contractsMain #contractsFilters {
+#contractsMain #contractsFilters, #dealsMain #contractsFilters {
   width: 15%;
   padding: 10px;
 }
-#contractsMain #contractsFilters ul {
+#contractsMain #contractsFilters ul, #dealsMain #contractsFilters ul {
   text-align: right;
   padding-right: 10px;
 }
-#contractsMain #contractsFilters ul li {
+#contractsMain #contractsFilters ul li, #dealsMain #contractsFilters ul li {
   font-size: 1rem;
   padding-top: 20px;
 }
-#contractsMain #contractsViewer {
+#contractsMain #contractsViewer, #dealsMain #contractsViewer {
   width: 75%;
   border-left: 1px solid #F74316;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-#contractsMain #contractsViewer .contractView {
+
+.contractView, .dealView {
   width: 200px;
   height: 200px;
   border-top: 2px solid #256F80;
@@ -128,22 +141,22 @@ header nav ul #newDealButton {
   position: relative;
   box-shadow: 3px 22px 47px -13px #9E968F;
 }
-#contractsMain #contractsViewer .contractView h3 {
+.contractView h3, .dealView h3 {
   color: #256F80;
   padding: 10px;
   font-weight: 100;
 }
-#contractsMain #contractsViewer .contractView .date {
+.contractView .date, .dealView .date {
   padding-top: 10px;
   padding-left: 10px;
 }
-#contractsMain #contractsViewer .contractView .contractDescr {
+.contractView .contractDescr, .contractView .dealDescr, .dealView .contractDescr, .dealView .dealDescr {
   width: 50%;
   padding-left: calc(50% - 25%);
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#contractsMain #contractsViewer .contractView .status {
+.contractView .status, .contractView .button, .dealView .status, .dealView .button {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -154,6 +167,25 @@ header nav ul #newDealButton {
   border-radius: 10px;
 }
 
+#dealsMain {
+  padding: 10px 50px;
+  justify-content: initial;
+}
+#dealsMain .dealView {
+  border-top: 2px solid #F74316;
+  height: 240px;
+}
+#dealsMain .dealView h3 {
+  color: #F74316;
+}
+#dealsMain .dealView li {
+  padding-top: 5px;
+}
+#dealsMain .dealView .button {
+  background-color: #256F80;
+}
+
+/* General class style */
 .button {
   color: white;
   background-color: #F74316;
